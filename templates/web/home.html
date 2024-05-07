@@ -1,0 +1,14 @@
+
+<title> kur sizi salamlayir </title>
+
+<h2>Mehsullar</h2>
+
+{% for instance in products %}
+<h4>----------------------------------------</h4>
+<h4>Id: {{ instance.id}}</h4>
+<h4>Mehsulun adi: {{ instance.name }}</h4>
+<h4>Qiymeti: {{ instance.price}}</h4>
+
+<h4>Tarix: {{ instance.created_at}}</h4>
+{% endfor %}
+
